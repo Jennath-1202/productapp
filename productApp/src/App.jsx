@@ -1,7 +1,7 @@
 import './App.css';
-import Navbar from './component/Navbar';
-import Viewproduct from './component/Viewproduct';
-import Addproduct from './component/Addproduct';
+import Navbar from './components/Navbar';
+import Viewproduct from './components/Viewproduct';
+import Addproduct from './components/Addproduct';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -9,8 +9,8 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path='/addproduct' element={<Addproduct />} />
-        <Route path='/home' element={<Viewproduct />} />
+        <Route path="/addproduct" element={<Addproduct />} />
+        <Route path="/home" element={<Viewproduct />} />
       </Routes>
     </>
   );

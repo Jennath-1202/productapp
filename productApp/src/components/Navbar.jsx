@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -12,15 +12,14 @@ const Navbar = () => {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Productapp
+            ProductApp
           </Typography>
-          {/* Navigation Links */}
-          <Button>
+          <Button color="inherit">
             <Link to="/addproduct" style={{ textDecoration: "none", color: "white" }}>
               Add Product
             </Link>
           </Button>
-          <Button>
+          <Button color="inherit">
             <Link to="/home" style={{ textDecoration: "none", color: "white" }}>
               Home
             </Link>
@@ -28,7 +27,7 @@ const Navbar = () => {
         </Toolbar>
       </AppBar>
     </Box>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
