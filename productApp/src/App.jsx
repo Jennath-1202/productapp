@@ -1,8 +1,9 @@
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
 import Viewproduct from './components/Viewproduct';
 import Addproduct from './components/Addproduct';
-import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (

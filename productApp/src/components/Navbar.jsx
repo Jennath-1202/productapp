@@ -1,33 +1,23 @@
 import React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            ProductApp
-          </Typography>
-          <Button color="inherit">
-            <Link to="/addproduct" style={{ textDecoration: "none", color: "white" }}>
-              Add Product
-            </Link>
-          </Button>
-          <Button color="inherit">
-            <Link to="/home" style={{ textDecoration: "none", color: "white" }}>
-              Home
-            </Link>
-          </Button>
-        </Toolbar>
-      </AppBar>
-    </Box>
+    <AppBar position="static">
+      <Toolbar>
+        <Typography variant="h6" style={{ flexGrow: 1 }}>
+          Product App
+        </Typography>
+        <Button color="inherit" component={Link} to="/home">
+          Home
+        </Button>
+        <Button color="inherit" component={Link} to="/addproduct">
+          Add Product
+        </Button>
+      </Toolbar>
+    </AppBar>
   );
-}
+};
 
 export default Navbar;
